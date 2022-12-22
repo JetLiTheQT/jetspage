@@ -1,0 +1,107 @@
+.todo-container{
+    position: relative;
+    height: 100vh;
+    background-image: url("./bg.jpg");
+    background-size: cover;
+    padding-top: 50px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .yellow {
+    color: yellow;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .task-card {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .task-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+  }
+  
+  .task-color-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .task-title {
+    margin: 0;
+    font-size: 18px;
+    
+  }
+  
+  .task-details {
+    padding: 10px;
+    
+  }
+  .task {
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: rgba(86, 86, 86, 0.445);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 15px;
+
+  }
+  
+  .task h3 {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+  
+  .task-red {
+    border-color: red;
+  }
+  
+  .task-yellow {
+    border-color: yellow;
+  }
+  
+  .task-blue {
+    border-color: blue;
+  }
+  
+  .task-complete {
+    /* Styles for the complete task cards */
+    text-decoration: line-through;
+    color: #bbb;
+  }
+form{
+    margin-top: 90px;
+    margin-left: 15px;
+    padding: 10px;
+    padding-top: 30px;
+    width: 15%;
+    background-color: rgba(86, 86, 86, 0.445);
+    border-radius: 10px;
+}
