@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 
 function Home() {
   const [text, setText] = useState('');
-  const fullText = 'Welcome, Jet';
+  const fullText = 'Welcome, JetLi';
 
   return (
     <div className="home-container">
