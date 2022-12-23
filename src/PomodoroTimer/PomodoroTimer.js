@@ -14,9 +14,9 @@ function PomodoroTimer() {
         setTimeLeft((prevTimeLeft) => {
           // If time is up, stop timer
           if (prevTimeLeft <= 0) {
-            setIsRunning(false);
             clearInterval(id);
             setIntervalId(null);
+            setIsRunning(false);
             return 0;
           }
           return prevTimeLeft - 1;
@@ -36,6 +36,8 @@ function PomodoroTimer() {
   };
 
   const handleStopClick = () => {
+    clearInterval(intervalId); // Clear interval
+    setIntervalId(null); // Set interval ID to null
     setIsRunning(false); // Stop timer
   };
 
@@ -54,7 +56,7 @@ function PomodoroTimer() {
   const minutes = Math.floor(timeLeft / 60).toString().padStart(2, '0');
   const seconds = (timeLeft % 60).toString().padStart(2, '0');
 
-  return (
+    return (
   <div className ="pomod-container">
     <div className="pomodoro-timer">
       <div className="time-display">
